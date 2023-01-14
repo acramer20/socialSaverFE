@@ -14,14 +14,6 @@ function CreateGroupForm({ createGroup }) {
     description: "",
     target_goal: 0,
   });
-//   const [formErrors, setFormErrors] = useState([]);
-
-//   console.debug(
-//       "CreateGroupForm",
-//       "createGroup=", typeof createGroup,
-//       "formInputs=", formInputs,
-//       "formErrors=", formErrors,
-//   );
 
   /** Handle form submit:
    *
@@ -81,10 +73,6 @@ function CreateGroupForm({ createGroup }) {
                   />
                 </div>
 
-                {/* {formErrors.length
-                    ? <Alert type="danger" messages={formErrors} />
-                    : null
-                } */}
 
                 <button
                     type="submit"

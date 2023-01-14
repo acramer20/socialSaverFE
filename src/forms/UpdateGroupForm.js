@@ -8,20 +8,7 @@ import SocialSaverApi from "../api/apiSS";
  */
 
 function UpdateGroupForm({id, title, description, target_goal}) {
-    // console.debug("UpdateGroupForm");
-    // const { id } = useParams();
-    // console.debug("UpdateGroupForm", "id=", id);
   
-    // const [group, setGroup] = useState(null);
-  
-    // useEffect(function getGroupDetails() {
-    //   async function getGroupInfo() {
-    //       setGroup(await SocialSaverApi.getGroup(id));
-    //       console.log(group)
-    //   }
-    //   getGroupInfo();
-    //   console.debug("UpdateGroupForm", "group=", group)
-    // }, [id]);
 
   const history = useHistory();
   const [formInputs, setFormInputs] = useState({
@@ -89,10 +76,7 @@ function UpdateGroupForm({id, title, description, target_goal}) {
                   />
                 </div>
 
-                {/* {formErrors.length
-                    ? <Alert type="danger" messages={formErrors} />
-                    : null
-                } */}
+               
 
                 <button
                     type="submit"

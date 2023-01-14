@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import SocialSaverApi from "../api/apiSS";
 import "../groups/GroupCard.css";
-
+/** deleting a group */
 function DeleteGroupForm({id}) {
     const history = useHistory();
 

@@ -6,8 +6,7 @@ import { useParams, Link } from "react-router-dom";
 import DeleteMemberForm from "../forms/DeleteMemberForm";
 import UserContext from "../forms/UserContext";
 
-/** Shows list of groups
- * GroupList -> GroupCardList -> GroupCard
+/** Shows list of members
  */
 
 function GroupMembers() {
@@ -27,7 +26,7 @@ function GroupMembers() {
     let members = await SocialSaverApi.getMembers(id);
     setMembers(members);
   }
-//** create a create member form and then import it here and use it in place. */
+//** uses create memberform to connect with backend */
   if (!members) return (<div>
     <CreateMemberForm id={id}/>
     <LoadingSpinner/>

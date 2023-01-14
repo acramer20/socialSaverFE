@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import SocialSaverApi from "../api/apiSS";
-
+/**DEleting a member  */
 function DeleteMemberForm({member_id, group_id}) {
     const history = useHistory();
 
